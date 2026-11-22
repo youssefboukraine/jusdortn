@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123d1d">
+  <meta name="description" content="Jus d’Or — عصائر طبيعية منعشة. اكتشف نكهات البرتقال والفراولة والليمون.">
+  <title>Jus d’Or | عصير بطعم الطبيعة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">انتعاش طبيعي في كل رشفة <span>✦</span> مذاق يفرّح يومك</div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Jus d’Or الصفحة الرئيسية">
+      <span class="brand-mark">J<span>’</span>O</span>
+      <span class="brand-name">Jus d’Or<small>LE GOÛT DE LA NATURE</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">الرئيسية</a>
+      <a href="#products">منتجاتنا</a>
+      <a href="#about">قصتنا</a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Changer la langue">FR</button>
+    <button class="cart-button" id="openCart" aria-label="افتح سلة المشتريات">
+      <span>سلة الطلبات</span><span class="cart-icon">🛍</span><b id="cartCount">0</b>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> نكهة طبيعية • لحظات منعشة</div>
+        <h1>كل رشفة…<br><em>حكاية انتعاش</em></h1>
+        <p>اكتشف عالم <strong>Jus d’Or</strong>، حيث تلتقي النكهة اللذيذة بالانتعاش في مشروبات تمنح يومك لمسة من السعادة.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#products">اكتشف النكهات <span>←</span></a>
+          <a class="text-link" href="#about">اكتشف قصتنا</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✦</span><span><b>اختَر نكهتك المفضلة</b><small>ثلاث نكهات… ومذاق لا يُنسى</small></span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <img src="images/logo-hero.jpg" alt="تصميم Jus d’Or مع عصير البرتقال والليمون">
+        <div class="floating-tag">Frais &amp; délicieux <span>🍊</span></div>
+      </div>
+      <div class="hero-leaf leaf-one">✳</div><div class="hero-leaf leaf-two">✳</div>
+    </section>
+
+    <section class="qualities" aria-label="مميزاتنا">
+      <div><span class="quality-icon">🍃</span><span><b>نكهات منعشة</b><small>اختيارات تناسب ذوقك</small></span></div>
+      <div><span class="quality-icon">☀️</span><span><b>لحظات من السعادة</b><small>انتعاش في كل وقت</small></span></div>
+      <div><span class="quality-icon">💛</span><span><b>مذاق يُحبّ</b><small>اختر نكهتك المفضلة</small></span></div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="section-heading">
+        <div><div class="eyebrow"><i></i> MENU / NOS JUS</div><h2>نكهاتنا <em>المميزة</em></h2></div>
+        <p>ثلاثة ألوان، ثلاث تجارب منعشة. أيّ نكهة ستختار اليوم؟</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image orange-bg"><span class="product-label">الأكثر إشراقاً</span><img src="images/orange.png" alt="عصير البرتقال Jus d’Or"></div>
+          <div class="product-info"><div class="product-title"><h3>Jus d’Orange</h3><span class="flavor-dot orange-dot"></span></div><p>عصير البرتقال</p><div class="product-bottom"><strong>2.500 <small>د.ت</small></strong><button class="add-btn" data-product="orange">أضف للسلة <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card featured">
+          <div class="product-image strawberry-bg"><span class="product-label">اختيار لذيذ</span><img src="images/fraise.png" alt="عصير الفراولة Jus d’Or"></div>
+          <div class="product-info"><div class="product-title"><h3>Jus de Fraise</h3><span class="flavor-dot strawberry-dot"></span></div><p>عصير الفراولة</p><div class="product-bottom"><strong>3.000 <small>د.ت</small></strong><button class="add-btn" data-product="fraise">أضف للسلة <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image lemon-bg"><span class="product-label">انتعاش منعش</span><img src="images/citron.png" alt="عصير الليمون Jus d’Or"></div>
+          <div class="product-info"><div class="product-title"><h3>Jus de Citron</h3><span class="flavor-dot lemon-dot"></span></div><p>عصير الليمون</p><div class="product-bottom"><strong>2.500 <small>د.ت</small></strong><button class="add-btn" data-product="citron">أضف للسلة <span>＋</span></button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-band" id="about">
+      <div class="quote-fruit">🍋</div>
+      <div><span class="eyebrow light"><i></i> L’ESPRIT JUS D’OR</span><h2>البساطة في المكونات،<br><em>والسعادة في المذاق.</em></h2><p>Jus d’Or… لمسة من الانتعاش تجعل لحظاتك أجمل.</p></div>
+      <div class="quote-stamp">JUS<br><b>D’OR</b><span>✦</span></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div>
+          <div class="eyebrow"><i></i> CONTACTEZ-NOUS</div>
+          <h2>يسعدنا <em>تواصلك معنا</em></h2>
+          <p>للطلبات والاستفسارات، تواصل معنا مباشرة.</p>
+        </div>
+        <div class="contact-links">
+          <a href="tel:+21699875833"><span class="contact-symbol">☎</span><span><small>الهاتف / WhatsApp</small><b dir="ltr">+216 99 875 833</b></span></a>
+          <a href="mailto:ayoub.8k65@gmail.com"><span class="contact-symbol">✉</span><span><small>البريد الإلكتروني</small><b dir="ltr">ayoub.8k65@gmail.com</b></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">J<span>’</span>O</span><span class="brand-name">Jus d’Or<small>LE GOÛT DE LA NATURE</small></span></a>
+    <p>انتعاش يليق بيومك.</p>
+    <a class="footer-contact" href="mailto:ayoub.8k65@gmail.com">ayoub.8k65@gmail.com</a>
+    <span class="copyright">© <span id="year"></span> Jus d’Or. Tous droits réservés.</span>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="سلة الطلبات" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow"><i></i> VOTRE PANIER</span><h2>سلة الطلبات</h2></div><button id="closeCart" class="close-btn" aria-label="إغلاق">×</button></div>
+    <div id="cartItems" class="cart-items"><div class="empty-cart">🛍<b>سلتك ما زالت فارغة</b><span>أضف نكهتك المفضلة وابدأ طلبك.</span></div></div>
+    <div class="cart-footer"><div class="total-line"><span>المجموع</span><strong id="cartTotal">0.000 د.ت</strong></div><button id="copyOrder" class="checkout-btn" disabled>إرسال الطلب عبر WhatsApp <span>←</span></button><small>سيتم فتح WhatsApp مع تفاصيل طلبك جاهزة للإرسال إلى Jus d’Or.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
