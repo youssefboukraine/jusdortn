@@ -1,4 +1,4 @@
-const products={orange:{name:"Jus d’Orange",price:2.5},fraise:{name:"Jus de Fraise",price:3},citron:{name:"Jus de Citron",price:2.5}};
+const products={orange:{name:"Jus d’Orange",price:2.5},fraise:{name:"Jus de Fraise",price:3},citron:{name:"Jus de Citron",price:2.5},ananas:{name:"Jus d’Ananas",price:4}};
 const cart={};
 const $=s=>document.querySelector(s);
 let lang="ar";
